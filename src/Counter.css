@@ -1,0 +1,38 @@
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(242, 200, 95);
+}
+
+.outer_container{
+   width: 50vw; 
+   height: 60vh;
+   border-radius: 10px;
+   background-color: goldenrod;
+
+}
+
+.outer_container h1,.outer_container p{
+    text-align: center;
+    padding-top: 1.5rem;
+    color: maroon;
+    font-size: 4rem;
+    overflow-x: auto;
+}
+.outer_container p::-webkit-scrollbar{
+    display: none;
+}
+.btn_container{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+ .btn_container button{
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
