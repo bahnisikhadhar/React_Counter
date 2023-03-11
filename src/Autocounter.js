@@ -14,11 +14,16 @@ function Autocounter() {
     return () => clearInterval(intervalId);
   }, [count, isRunning]);
 
-  return (
+  function handleReset(){
+    setIsRunning(false);
+    setCount(0);
+  }
+  return ( 
     <div>
       <h1>{count}</h1>
       <button onClick={() => setIsRunning(!isRunning)}>Start</button>
       <button onClick={()=> setIsRunning(isRunning===false)}>Stop</button>
+      <button onClick={handleReset}>Reset</button>
     </div>
   );
 }
